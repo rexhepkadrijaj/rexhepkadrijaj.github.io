@@ -1,0 +1,320 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+section {
+    padding: 50px 10%;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 100px 10%;
+}
+
+.hero .content {
+    max-width: 50%;
+}
+
+.hero img {
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+/* About Section */
+.about {
+    background-color: #f8e7db;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-content div {
+    width: 45%;
+}
+
+/* Product Highlights Section */
+.highlights {
+    background-color: #fff;
+    text-align: center;
+}
+
+.highlight-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.highlight-grid div {
+    width: 30%;
+    text-align: center;
+}
+
+/* Technical Specifications Section */
+.specs {
+    background-color: #f8e7db;
+    text-align: center;
+}
+
+.spec-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.spec-grid div {
+    width: 30%;
+    text-align: center;
+}
+
+/* Pricing Section 
+.pricing {
+    background-color: #fff;
+    text-align: center;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pricing-grid div {
+    width: 45%;
+    text-align: center;
+} */
+
+/* Footer Section */
+.contact-us {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 10%;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-content h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: left;
+    color: #fff;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.step {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.contact-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.contact-item p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Devices (Small Screens) */
+@media screen and (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+        padding: 50px 5%;
+    }
+    .hero .content {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .hero img {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-content div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .highlight-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .highlight-grid div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .spec-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .spec-grid div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer-content {
+        text-align: center;
+        padding: 20px;
+    }
+    .contact-item {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .step {
+        width: 30px;
+        height: 30px;
+    }
+    .contact-item h3 {
+        font-size: 16px;
+    }
+    .contact-item p {
+        font-size: 12px;
+    }
+}
+
+/* Tablet Devices (Medium Screens) */
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 80px 5%;
+    }
+    .hero .content {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .hero img {
+        max-width: 70%;
+    }
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-content div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .highlight-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .highlight-grid div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .spec-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .spec-grid div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer-content {
+        padding: 20px;
+    }
+}
+
+/* Desktop Devices (Large Screens) */
+@media screen and (min-width: 1024px) {
+    .hero {
+        padding: 100px 10%;
+    }
+    .hero .content {
+        max-width: 50%;
+        text-align: left;
+    }
+    .hero img {
+        max-width: 40%;
+    }
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .about-content div {
+        width: 45%;
+    }
+    .highlight-grid {
+        display: flex;
+        justify-content: space-between;
+    }
+    .highlight-grid div {
+        width: 30%;
+    }
+    .spec-grid {
+        display: flex;
+        justify-content: space-between;
+    }
+    .spec-grid div {
+        width: 30%;
+    }
+    .footer-content {
+        padding: 50px 10%;
+    }
+}
